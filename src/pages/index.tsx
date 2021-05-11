@@ -1,11 +1,13 @@
+import Link from 'next/link';
+
 import { FormProvider, useForm } from 'react-hook-form';
 
 import { FiLogIn } from 'react-icons/fi';
 
-import { Button } from '~/components/shared/Button';
 import { Input } from '~/components/shared/Input';
+import { Button } from '~/components/shared/Button';
 
-import { Container, Content, Logo } from '~/styles/pages/Home';
+import { Wrapper, Container, Content, Logo, SignUpContainer } from '~/styles/pages/Home';
 
 export default function Home() {
   const { handleSubmit, ...form } = useForm();
@@ -15,22 +17,32 @@ export default function Home() {
   }
 
   return (
-    <Container>
-      <Content>
-        <Logo src="/static/img/logo.svg" alt="Be The Hero" />
+    <Wrapper>
+      <Container>
+        <Content>
+          <Logo src="/static/img/logo.svg" alt="Be The Hero" />
 
-        <h1>Faça seu logon</h1>
+          <h1>Faça seu logon</h1>
 
-        <FormProvider handleSubmit={handleSubmit} {...form}>
-          <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
-            <Input name="email" icon={FiLogIn} placeholder="Seu e-mail" />
+          <FormProvider handleSubmit={handleSubmit} {...form}>
+            <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
+              <Input name="email" icon={FiLogIn} placeholder="Seu e-mail" />
 
-            <Button type="submit">Entrar no sistema</Button>
-          </form>
-        </FormProvider>
-      </Content>
+              <Button type="submit">Entrar no sistema</Button>
+            </form>
+          </FormProvider>
 
-      <img src="/static/img/peoples.svg" alt="Peoples" />
-    </Container>
+          <Link href="/signup">
+            <SignUpContainer>
+              <a target="_blank">
+                <FiLogIn size={20} /> Não tenho cadastro
+              </a>
+            </SignUpContainer>
+          </Link>
+        </Content>
+
+        <img src="/static/img/peoples.svg" alt="Peoples" />
+      </Container>
+    </Wrapper>
   );
 }
