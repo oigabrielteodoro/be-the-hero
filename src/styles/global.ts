@@ -1,19 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-  }
-
   :root {
     --red-400: #E02041;
 
     --white: #FFFFFF;
 
-    --background: ##F0F0F5;
+    --shape: #F0F0F5;
 
     --gray-50: ##DCDCE6;
     --gray-100: ##A8A8B3;
@@ -23,8 +16,24 @@ export const GlobalStyle = createGlobalStyle`
     --black-800: ##13131A;
   }
 
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    @media (max-width: 1080px) {
+      font-size: 93.75%;
+    }
+    @media (max-width: 720px) {
+      font-size: 87.5%;
+    }
+  }
+
   body {
-    background: var(--background);
+    background: var(--shape);
     -webkit-font-smoothing: antialiased;
   }
 
