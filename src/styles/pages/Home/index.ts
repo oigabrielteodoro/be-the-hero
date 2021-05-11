@@ -32,7 +32,7 @@ export const Content = styled.div`
   }
 
   form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 1rem;
   }
 `;

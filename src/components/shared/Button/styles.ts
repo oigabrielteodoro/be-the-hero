@@ -14,4 +14,10 @@ export const Container = styled.button`
   border-radius: 0.5rem;
 
   flex: 1;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `;
