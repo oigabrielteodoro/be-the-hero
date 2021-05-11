@@ -54,8 +54,18 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  input:-webkit-autofill {
+    box-shadow:0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+  }
+
+  input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+  }
+
   &::selection {
-    color: var(--white);
+    color: #fff;
     background: var(--red-400);
   }
 `;

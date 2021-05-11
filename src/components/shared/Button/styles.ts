@@ -13,7 +13,8 @@ export const Container = styled.button`
   padding: 1.25rem;
   border-radius: 0.5rem;
 
-  flex: 1;
+  width: 100%;
+  height: 3.75rem;
 
   transition: filter 0.2s;
 

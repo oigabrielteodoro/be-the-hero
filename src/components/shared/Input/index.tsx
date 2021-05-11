@@ -5,10 +5,15 @@ import InputProps from './dtos/InputProps';
 
 import { Container } from './styles';
 
-export function Input({ name, defaultValue, icon: Icon, iconSize = 20, ...rest }: InputProps) {
+export function Input({
+  name,
+  defaultValue,
+  icon: Icon,
+  iconSize = 20,
+  ...rest
+}: InputProps) {
   const { register, unregister, watch, setValue } = useFormContext();
 
-  const [isFilled, setIsFilled] = useState(!!defaultValue);
   const [isFocused, setIsFocused] = useState(false);
 
   useEffect(() => {
@@ -24,7 +29,6 @@ export function Input({ name, defaultValue, icon: Icon, iconSize = 20, ...rest }
   const fieldValue = watch(name);
 
   function handleInputBlur() {
-    setIsFilled(!!fieldValue);
     setIsFocused(false);
   }
 
@@ -37,7 +41,7 @@ export function Input({ name, defaultValue, icon: Icon, iconSize = 20, ...rest }
   }
 
   return (
-    <Container isFilled={isFilled} isFocused={isFocused}>
+    <Container isFilled={!!fieldValue} isFocused={isFocused}>
       {Icon && <Icon size={iconSize} />}
       <input
         name={name}

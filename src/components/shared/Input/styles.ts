@@ -29,6 +29,8 @@ export const Container = styled.div<ContainerProps>`
     font-size: 1.125rem;
     line-height: 1.25rem;
 
+    flex: 1;
+
     &::placeholder {
       color: var(--gray-100);
     }

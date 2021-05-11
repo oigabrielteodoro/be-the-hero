@@ -34,7 +34,7 @@ export default function Home() {
 
           <Link href="/signup">
             <SignUpContainer>
-              <a target="_blank">
+              <a>
                 <FiLogIn size={20} /> Não tenho cadastro
               </a>
             </SignUpContainer>
