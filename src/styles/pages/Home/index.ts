@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const animation = keyframes`
+  0% {
+    transform: translateY(-10px)
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+`;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -25,6 +35,8 @@ export const Logo = styled.img`
 
   width: 250px;
   height: 106px;
+
+  animation: ${animation} 2s alternate infinite;
 `;
 
 export const Content = styled.div`
