@@ -7,9 +7,15 @@ import { FiLogIn } from 'react-icons/fi';
 import { Input } from '~/components/shared/Input';
 import { Button } from '~/components/shared/Button';
 
-import { Wrapper, Container, Content, Logo, SignUpContainer } from '~/styles/pages/Home';
+import {
+  Wrapper,
+  Container,
+  Content,
+  Logo,
+  SignUpContainer,
+} from '~/styles/pages/SignIn';
 
-export default function Home() {
+export default function SignIn() {
   const { handleSubmit, ...form } = useForm();
 
   function onSubmit() {
