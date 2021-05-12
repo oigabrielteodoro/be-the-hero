@@ -1,14 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-const animation = keyframes`
-  0% {
-    transform: translateY(-10px)
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-`;
+import { Container as LoadContainer } from '~/components/shared/Load/styles';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -30,15 +22,6 @@ export const Container = styled.div`
   }
 `;
 
-export const Logo = styled.img`
-  margin-bottom: 100px;
-
-  width: 250px;
-  height: 106px;
-
-  animation: ${animation} 2s alternate infinite;
-`;
-
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
@@ -56,6 +39,10 @@ export const Content = styled.div`
   form {
     display: grid;
     grid-gap: 1rem;
+  }
+
+  ${LoadContainer} {
+    margin-bottom: 100px;
   }
 `;
 

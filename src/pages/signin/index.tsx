@@ -7,13 +7,9 @@ import { FiLogIn } from 'react-icons/fi';
 import { Input } from '~/components/shared/Input';
 import { Button } from '~/components/shared/Button';
 
-import {
-  Wrapper,
-  Container,
-  Content,
-  Logo,
-  SignUpContainer,
-} from '~/styles/pages/SignIn';
+import { Wrapper, Container, Content, SignUpContainer } from '~/styles/pages/SignIn';
+
+import { Load } from '~/components/shared/Load';
 
 export default function SignIn() {
   const { handleSubmit, ...form } = useForm();
@@ -24,7 +20,7 @@ export default function SignIn() {
     <Wrapper>
       <Container>
         <Content>
-          <Logo src="/static/img/logo.svg" alt="Be The Hero" />
+          <Load duration={3} alignInCenter={false} repeat={0} />
 
           <h1>Faça seu logon</h1>
 

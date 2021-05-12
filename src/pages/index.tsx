@@ -2,12 +2,13 @@ import { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 
 import CaseDTO from '~/dtos/CaseDTO';
 
+import { Load } from '~/components/shared/Load';
 import { Header } from '~/components/shared/Header';
 import { CaseCard } from '~/components/modules/Home/CaseCard';
 
 import { CasesRepository } from '~/services/repositories/modules/CasesRepository';
 
-import { CasesList, Container } from '~/styles/pages/Home';
+import { Wrapper, Container, CasesList } from '~/styles/pages/Home';
 
 export default function Home() {
   const observer = useRef<any>(null);
@@ -58,7 +59,15 @@ export default function Home() {
   );
 
   if (isLoading) {
-    return <h1>Loading...</h1>;
+    return (
+      <Wrapper>
+        <Header />
+
+        <Container>
+          <Load />
+        </Container>
+      </Wrapper>
+    );
   }
 
   return (

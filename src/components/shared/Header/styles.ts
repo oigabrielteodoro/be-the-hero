@@ -23,6 +23,8 @@ export const Container = styled.header`
   margin: 0 auto;
 
   padding: 2rem 0;
+
+  width: 100%;
 `;
 
 export const ContentRow = styled.div`
