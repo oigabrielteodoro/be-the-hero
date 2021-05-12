@@ -5,7 +5,7 @@ import CaseDTO from '~/dtos/CaseDTO';
 import { Header } from '~/components/shared/Header';
 import { CaseCard } from '~/components/modules/Home/CaseCard';
 
-import { CasesRepository } from '~/repositories/modules/CasesRepository';
+import { CasesRepository } from '~/services/repositories/modules/CasesRepository';
 
 import { CasesList, Container } from '~/styles/pages/Home';
 
