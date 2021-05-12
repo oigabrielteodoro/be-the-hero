@@ -35,7 +35,7 @@ export const Content = styled.div`
   h1 {
     color: var(--black-800);
     margin: 4rem 0 2rem;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2.25rem;
     line-height: 2.25rem;
   }

@@ -49,7 +49,7 @@ export const Content = styled.div`
   h1 {
     font-size: 2.25rem;
     line-height: 2.25rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 2rem;
   }
 
@@ -60,9 +60,11 @@ export const Content = styled.div`
 `;
 
 export const SignUpContainer = styled.div`
-  margin-top: 2.5rem;
+  margin-top: 1.75rem;
 
   cursor: pointer;
+
+  margin-right: auto;
 
   a {
     display: flex;

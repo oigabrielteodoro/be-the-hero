@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "title": "Cadelinha atropelada",
+      "description": "A cadelinha Jolie foi atropelada por um carro no bairro Santana e teve que passar por uma cirurgia às pressas.",
+      "value": 120.00
+    },
+    {
+      "id": 2,
+      "title": "Cadelinha atropelada",
+      "description": "A cadelinha Jolie foi atropelada por um carro no bairro Santana e teve que passar por uma cirurgia às pressas.",
+      "value": 120.00
+    },
+    {
+      "id": 3,
+      "title": "Cadelinha atropelada",
+      "description": "A cadelinha Jolie foi atropelada por um carro no bairro Santana e teve que passar por uma cirurgia às pressas.",
+      "value": 120.00
+    },
+    {
+      "id": 4,
+      "title": "Cadelinha atropelada",
+      "description": "A cadelinha Jolie foi atropelada por um carro no bairro Santana e teve que passar por uma cirurgia às pressas.",
+      "value": 120.00
+    },
+    {
+      "id": 5,
+      "title": "Cadelinha atropelada",
+      "description": "A cadelinha Jolie foi atropelada por um carro no bairro Santana e teve que passar por uma cirurgia às pressas.",
+      "value": 120.00
+    },
+    {
+      "id": 6,
+      "title": "Cadelinha atropelada",
+      "description": "A cadelinha Jolie foi atropelada por um carro no bairro Santana e teve que passar por uma cirurgia às pressas.",
+      "value": 120.00
+    }
+  ]
+}

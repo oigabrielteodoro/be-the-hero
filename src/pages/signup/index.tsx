@@ -26,7 +26,7 @@ export default function SignUp() {
             pessoas a encontrarem os casos da sua ONG.
           </span>
 
-          <Link href="/signup">
+          <Link href="/signin">
             <a>
               <FiArrowLeft size={20} strokeWidth={2.5} />
               Voltar para o login
