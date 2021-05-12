@@ -54,6 +54,18 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--shape);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--red-400);
+  }
+
   input:-webkit-autofill {
     box-shadow:0 0 0 50px white inset;
     -webkit-text-fill-color: #333;

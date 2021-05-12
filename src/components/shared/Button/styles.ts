@@ -5,7 +5,7 @@ export const Container = styled.button`
   border: 0;
 
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 500;
 
   color: var(--white);
   line-height: 1.313rem;
