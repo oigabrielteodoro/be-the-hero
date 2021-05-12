@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { useFormContext } from 'react-hook-form';
 
 import InputProps from './dtos/InputProps';
@@ -49,6 +50,7 @@ export function Input({
         onBlur={handleInputBlur}
         onFocus={handleInputFocus}
         onChange={event => handleInputChange(event.currentTarget.value)}
+        autoComplete="new-password"
         {...rest}
       />
     </Container>

@@ -26,7 +26,7 @@ export default function SignUp() {
             pessoas a encontrarem os casos da sua ONG.
           </span>
 
-          <Link href="/">
+          <Link href="/signup">
             <a>
               <FiArrowLeft size={20} strokeWidth={2.5} />
               Voltar para o login
@@ -34,7 +34,7 @@ export default function SignUp() {
           </Link>
         </Content>
         <FormProvider handleSubmit={handleSubmit} {...form}>
-          <Form>
+          <Form autoComplete="new-password">
             <Input name="name" placeholder="Nome da ONG" icon={FiTag} />
             <Input type="email" name="email" placeholder="E-mail" icon={FiMail} />
             <Input name="cellphone" placeholder="Celular" icon={FiSmartphone} />
